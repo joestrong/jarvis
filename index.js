@@ -7,15 +7,11 @@ var speakable = new Speakable({key: config.apiKey}, {
 });
 
 speakable.on('speechStart', function() {
-  console.log('onSpeechStart');
+  console.log('Listening...');
 });
 
 speakable.on('speechStop', function() {
-  console.log('onSpeechStop');
-});
-
-speakable.on('speechReady', function() {
-  console.log('onSpeechReady');
+  console.log('Stopped Listening');
 });
 
 speakable.on('error', function(err) {
@@ -25,7 +21,7 @@ speakable.on('error', function(err) {
 });
 
 speakable.on('speechResult', function(recognizedWords) {
-  console.log('onSpeechResult:')
+  console.log('Recognised words:')
   console.log(recognizedWords);
   speakable.recordVoice();
 });
