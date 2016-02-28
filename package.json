@@ -1,13 +1,14 @@
 {
   "name": "jarvis",
   "version": "1.0.0",
-  "description": "",
+  "description": "Speech recognition & automation",
   "main": "index.js",
   "dependencies": {
     "speakable": "git@github.com:joestrong/node-speakable.git#dc70bd58b7c5449858fcefc5a821724ed5fa8f54"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joe Strong <joestrong@gmail.com> (https://www.joestrong.co.uk/)",
