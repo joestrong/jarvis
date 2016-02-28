@@ -2,7 +2,7 @@ var Speakable = require('speakable');
 
 var speakable = new Speakable({key: 'AIzaSyB4DNzMrohRG0IBt_mBmm2cvnfbjKnpgCM'}, {
   sox_path: 'sox',
-  threshold: '0.1'
+  threshold: '2.0'
 });
 
 speakable.on('speechStart', function() {
