@@ -1,6 +1,7 @@
+var config = require('./config.js');
 var Speakable = require('speakable');
 
-var speakable = new Speakable({key: 'AIzaSyB4DNzMrohRG0IBt_mBmm2cvnfbjKnpgCM'}, {
+var speakable = new Speakable({key: config.apiKey}, {
   sox_path: 'sox',
   threshold: '2.0'
 });
